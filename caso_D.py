@@ -49,8 +49,8 @@ def caso_D():
 	ret.agregar_nodo(3*L   , B   , 0   ) #10
 	
 	#Barras
-	R = 8 *cm
-	t = 5 *mm
+	R = 8 * cm
+	t = 5 * mm
     
 	props = [R, t, 200*GPa, 7600*kg/m**3, 420*MPa]
 	

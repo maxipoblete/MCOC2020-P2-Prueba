@@ -34,6 +34,7 @@ def caso_L():
 	ret = Reticulado()
 	
 	#Nodos
+    
 	ret.agregar_nodo(0     , 0   ,  0  ) #0
 	ret.agregar_nodo(L     , 0   ,  0  ) #1
 	ret.agregar_nodo(2*L   , 0   ,  0  ) #2
@@ -49,8 +50,9 @@ def caso_L():
 	ret.agregar_nodo(3*L   , B   , 0   ) #10
 	
 	#Barras
-	R = 8 *cm
-	t = 5 *mm
+	R = 8 * cm
+	t = 5 * mm
+    
 	props = [R, t, 200*GPa, 0*kg/m**3, 420*MPa]
 	
 	ret.agregar_barra(Barra(0,  1, *props))   # 0
@@ -100,12 +102,12 @@ def caso_L():
 	
 	
 	ret.agregar_fuerza(0, 2, -F)
-	ret.agregar_fuerza(1, 2, -F)
-	ret.agregar_fuerza(2, 2, -F)
+	ret.agregar_fuerza(1, 2, -2*F)
+	ret.agregar_fuerza(2, 2, -2*F)
 	ret.agregar_fuerza(3, 2, -F)
 	ret.agregar_fuerza(7, 2, -F)
-	ret.agregar_fuerza(8, 2, -F)
-	ret.agregar_fuerza(9, 2, -F)
+	ret.agregar_fuerza(8, 2, -2*F)
+	ret.agregar_fuerza(9, 2, -2*F)
 	ret.agregar_fuerza(10, 2, -F)
 	
 	return ret
