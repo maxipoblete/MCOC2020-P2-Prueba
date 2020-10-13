@@ -116,8 +116,8 @@ class Barra(object):
 		se cumplan las disposiciones de diseño lo más cerca posible
 		a FU = 1.0.
 		"""
-        self.R = 0.6*self.R   #cambiar y poner logica de diseño: 0.6 
-        self.t = 0.6*self.t   #cambiar y poner logica de diseño
+        self.R = 0.9*self.R   #cambiar y poner logica de diseño
+        self.t = 0.9*self.t   #cambiar y poner logica de diseño
         return None
 
       
